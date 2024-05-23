@@ -5,10 +5,11 @@
 
     <link rel="icon" href="./assets/images/terminal.svg" />
 		<title>Ethan Morissette's Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="description" content="A portfolio website">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/dark-theme.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
 
@@ -20,9 +21,15 @@
       <a class="nav-title-link" href="./index.html">
         <span class="nav-title">Ethan Morissette</span>
       </a>
-      <a class="nav-title-link" href="./index.html">
-        <span class="nav-blog">blog</span>
-      </a>
+      <div class="nav-right">
+        <a class="nav-title-link" href="./blog.html">
+          <span class="nav-blog">blog</span>
+        </a>
+        <button id="theme-toggle">
+          <img id="sun-icon" src="./assets/icons/sun.svg" class="theme-icon" alt="Day Mode">
+          <img id="moon-icon" src="./assets/icons/moon.svg" class="theme-icon" alt="Night Mode" style="display: none;">
+        </button>
+      </div>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
@@ -31,14 +38,14 @@
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
-          <img src="./assets/images/headshot.png" class="portfolio-header-image">
+          <img src="./assets/images/headshot_dark.png" class="portfolio-header-image">
           </a>
         </div>
 
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm Ethan</span>
-              <div class="body-text">I'm a developer focused on data-driven solutions, with a good eye for creating impactful, real-world applications.</div>
+              <span class="main-title">Howdy! I'm Ethan</span>
+              <div class="body-text">A focused developer driven by data-based solutions, with a good eye for creating impactful, real-world software solutions.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -51,7 +58,7 @@
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
           <div class="body-text">In my free time, I enjoy tinkering with new and exciting projects and sharpening my skills by learning something new or improving on existing ones. When I'm AFK, I spend most of my time exploring the outdoors on my mountain bike or skis!</div>
-          <div class="body-text">I have approximately three years of work experience through co-op terms with Teck and ForisBC. During these terms, I had the opportunity to work on a variety of fascinating projects, ranging from networking and server builds to the development of production machine learning models. These experiences have allowed me to hone my technical skills and gain valuable insights into real-world applications of technology."</div>
+          <div class="body-text">I have approximately three years of work experience through co-op terms with Teck and ForisBC. During these terms, I had the opportunity to work on a variety of fascinating projects, ranging from networking and server builds to the development of production machine learning models. These experiences have allowed me to hone my technical skills and gain valuable insights into real-world applications of technology.</div>
         </div>
       </div>
 
@@ -83,12 +90,12 @@
             </a>
           </div>
           <div class="project-card">
-            <img src="./assets/images/Tada_vis.png" class="project-image">
+            <img src="./assets/images/streamlit_logo_dark.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">TADA</div>
               <div class="body-text project-card-text">Tada is a webapp built using Streamlit. It is created to allow users to clean and analyze a dataset quickly.</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="./project-pages/tada.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -97,23 +104,21 @@
       </div>
     </div>
 
-    <button id="back-to-top"><image src="./assets/icons/arrow-up.svg" class="arrow-up"/></button>
+    <button id="back-to-top"><img src="./assets/icons/arrow-up.svg" class="arrow-up"/></button>
 
     <!-- FOOTER -->
-    <!-- TODO: Remove IG and add Linkendn and github-->
     <div id="footer">
       <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+        <img src="./assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin"/>
       </a>
-
+  
       <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
-        <image src="./assets/icons/github.svg" class="footer-icon"/>
+        <img src="./assets/icons/github.svg" class="footer-icon" data-icon="github"/>
       </a>
-
-      <a class="icon-link" href="ethan.morissette@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+  
+      <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
+        <img src="./assets/icons/mail.svg" class="footer-icon" data-icon="mail"/>
       </a>
     </div>
-
 	</body>
 </html>
