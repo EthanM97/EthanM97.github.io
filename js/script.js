@@ -1,3 +1,12 @@
+// Function to preload images
+function preloadImages(imagePaths) {
+    imagePaths.forEach(path => {
+        const img = new Image();
+        img.src = path;
+    });
+}
+
+
 // Determine the base path for assets based on the current URL
 function getBasePath() {
     return window.location.pathname.includes('project-pages') ? '../' : './';
@@ -23,6 +32,8 @@ const paths = {
         headshotLight: `${basePath}assets/images/headshot_light.png`
     }
 };
+
+preloadImages([paths.images.headshotDark, paths.images.headshotLight]);
 
 // Function to initialize the theme toggle icons
 function initializeThemeToggleIcons() {
