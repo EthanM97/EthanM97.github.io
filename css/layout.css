@@ -25,6 +25,31 @@ body {
   gap: 96px;
 }
 
+/* Back to top */
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place it at the bottom */
+  right: 20px; /* Place it 20px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#back-to-top img {
+  width: 24px;
+  height: 24px;
+}
+
+#back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Add a slight background on hover */
+}
+
+
 
 
 /* Portfolio Header */
