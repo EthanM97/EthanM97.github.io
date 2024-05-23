@@ -32,6 +32,32 @@ body {
   font-weight: 700;
 }
 
+.nav-blog {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Blog Specific Typography */
+.blog-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.blog-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.blog-image {
+  margin: 20px 0;
+}
+
 .body-text {
   font-size: 16px;
   font-weight: 500;

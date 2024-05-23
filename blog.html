@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="./assets/images/terminal.svg" />
+  <title>Blog</title>
+  <meta name="description" content="A portfolio website">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/dark-theme.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <span class="nav-title">Home</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-title-link" href="./blog.html">
+        <span class="nav-blog">Blog</span>
+      </a>
+      <button id="theme-toggle">
+        <img id="sun-icon" class="theme-icon" alt="Day Mode">
+        <img id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;">
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
+    <!-- BLOG HEADER -->
+    <div id="blog-header">
+      <div class="main-title">Blog Title</div>
+      <div class="body-text">A brief introduction or summary of the blog post to hook the reader. This can be a few sentences long.</div>
+    </div>
+
+    <!-- BLOG CONTENT -->
+    <div id="blog-content">
+      <div class="body-text">
+        <p>Welcome to my blog! This is where I share my thoughts, experiences, and insights on various topics. Whether it's about technology, personal projects, or random musings, you'll find it all here.</p>
+        <p>Here's an example of a blog post. You can add more paragraphs, images, and other content as needed to fully convey your message.</p>
+        <img src="./assets/images/code.jpeg" alt="Sample Image" class="blog-image">
+        <p>Feel free to explore and enjoy the content. Don't forget to check out other sections of the website for more information about my work and projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top"><img src="./assets/icons/arrow-up.svg" class="arrow-up"/></button>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
+      <img src="./assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin"/>
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
+      <img src="./assets/icons/github.svg" class="footer-icon" data-icon="github"/>
+    </a>
+
+    <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
+      <img src="./assets/icons/mail.svg" class="footer-icon" data-icon="mail"/>
+    </a>
+  </div>
+</body>
+</html>

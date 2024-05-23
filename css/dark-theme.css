@@ -1,37 +1,53 @@
 body.dark-mode {
     background-color: black;
     color: white;
-  }
-  
-  .navbar.dark-mode, .button.dark-mode, .project-card.dark-mode, .footer-icon.dark-mode {
+}
+
+.navbar.dark-mode,
+.button.dark-mode,
+.project-card.dark-mode,
+.footer-icon.dark-mode {
     background-color: black;
     color: white;
-  }
-  
-  .dark-mode .nav-title, .dark-mode .nav-blog, .dark-mode .header-text, .dark-mode .body-text, .dark-mode .subheader-text, .dark-mode .button-text {
+}
+
+.dark-mode .nav-title,
+.dark-mode .nav-blog,
+.dark-mode .header-text,
+.dark-mode .body-text,
+.dark-mode .subheader-text {
     color: white;
-  }
-  
-  .dark-mode .button {
-    background-color: #555;
-  }
-  
-  .dark-mode .button:hover {
-    background-color: #777;
-  }
-  
-  /* Theme toggle icon styling */
-  button#theme-toggle {
+}
+
+.dark-mode .button {
+    background-color: white;
+}
+
+.dark-mode .button:hover {
+    background-color: #7F7EFF;
+    text-decoration-thickness: 1.5px;
+}
+
+.dark-mode .button:hover .button-text {
+    color: white;
+    /* Change button text color to white on hover */
+}
+
+.dark-mode .button .button-text {
+    color: black;
+}
+
+/* Theme toggle icon styling */
+button#theme-toggle {
     border: none;
     background: none;
     padding: 0;
     margin: 0;
     cursor: pointer;
-  }
-  
-  .theme-icon {
+}
+
+.theme-icon {
     width: 24px;
     height: 24px;
     display: inline-block;
-  }
-  
+}
