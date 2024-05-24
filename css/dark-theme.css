@@ -15,8 +15,7 @@ body.dark-mode {
 .dark-mode .nav-blog,
 .dark-mode .header-text,
 .dark-mode .body-text,
-.dark-mode .subheader-text
-.dark-mode .body-text a.underline {
+.dark-mode .subheader-text .dark-mode .body-text a.underline {
     color: white;
 }
 
@@ -29,9 +28,20 @@ body.dark-mode {
     text-decoration-thickness: 1.5px;
 }
 
+.dark-mode span.nav-title:hover {
+    color: #7F7EFF;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.dark-mode span.nav-blog:hover {
+    color: #7F7EFF;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 .dark-mode .button:hover .button-text {
     color: white;
-    /* Change button text color to white on hover */
 }
 
 .dark-mode .button .button-text {
@@ -39,11 +49,16 @@ body.dark-mode {
 }
 
 .dark-mode .blog-card-title {
-    color: black; /* Keep title color black */
+    color: black;
 }
 
 .dark-mode .blog-card-description {
-    color: black; /* Change description color if needed */
+    color: black;
+}
+
+/* Change the right-arrow icon color to white on button hover in dark mode */
+.dark-mode .button:hover .right-arrow-icon {
+    filter: invert(1);
 }
 
 /* Theme toggle icon styling */
@@ -59,4 +74,13 @@ button#theme-toggle {
     width: 24px;
     height: 24px;
     display: inline-block;
+}
+
+.dark-mode .tag {
+    background-color: white;
+}
+
+
+.dark-mode .tag .button-text {
+    color: black;
 }

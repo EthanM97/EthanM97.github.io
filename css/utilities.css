@@ -23,6 +23,10 @@ a.icon-link:hover {
   transform: rotate(15deg);
 }
 
+span.main-title {
+  padding-bottom: 6px;
+}
+
 
 /* Navbar Styling */
 
@@ -32,7 +36,7 @@ a.icon-link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  position: sticky;
   top: 0;
   left: 0;
 }
@@ -50,6 +54,7 @@ a.icon-link:hover {
 
 .nav-title-link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
