@@ -40,6 +40,25 @@ body.dark-mode {
     text-decoration-thickness: 2px;
 }
 
+.dark-mode .blog-card {
+    background-color: #6619d0;
+    border: 4px solid #6619d0;
+    color: white;
+}
+
+.dark-mode a.tag-blog {
+    border: 2px solid white;
+}
+
+.dark-mode .blog-card-content,
+.dark-mode .blog-card-content .blog-card-title,
+.dark-mode .blog-card-content .blog-card-datetime,
+.dark-mode .blog-card-content .blog-card-description,
+.dark-mode .blog-card-content .tag-blog,
+.dark-mode .blog-card-content .tag-blog .button-text {
+    color: #F8F7F9;
+}
+
 .dark-mode .button:hover .button-text {
     color: white;
 }
