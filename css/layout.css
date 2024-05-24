@@ -45,24 +45,60 @@ body {
 }
 
 #back-to-top:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Add a slight background on hover */
+  background-color: #7F7EFF; /* Add a slight background on hover */
 }
 
-/* Blog Header */
-#blog-header {
-  margin-bottom: 40px;
-}
-
-#blog-content {
+/* Blog Container */
+.blog-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
+  margin: 50px 0;
 }
 
-.blog-image {
+/* Blog Card */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Reduce margin for heading */
+}
+
+.blog-card-image {
   width: 100%;
   height: auto;
 }
+
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-card-datetime {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.blog-card-description {
+  font-size: 16px;
+  color: black;
+}
+
 
 /* Portfolio Header */
 
@@ -91,9 +127,6 @@ body {
   flex-basis: 50%;
 }
 
-
-
-
 /* About Section */
 
 #about-section {
@@ -107,9 +140,6 @@ body {
   flex-direction: column;
   gap: 34px;
 }
-
-
-
 
 /* Project Section */
 
@@ -250,6 +280,45 @@ body {
 
   .project-card {
     max-width: 100%;
+  }
+}
+
+/* Responsive Adjustments for Blog Page */
+/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1600px) {
+  #main-content.blog-main-content {
+    margin: 200px 275px;
+    gap: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1200px) {
+  #main-content.blog-main-content {
+    margin: 200px 175px;
+    gap: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 1000px and below) */
+@media only screen and (max-width: 1000px) {
+  #main-content.blog-main-content {
+    margin: 175px 75px;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main-content.blog-main-content {
+    margin: 120px 50px;
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #main-content.blog-main-content {
+    margin: 125px 20px;
+    gap: 0;
   }
 }
 

@@ -15,7 +15,8 @@ body.dark-mode {
 .dark-mode .nav-blog,
 .dark-mode .header-text,
 .dark-mode .body-text,
-.dark-mode .subheader-text {
+.dark-mode .subheader-text
+.dark-mode .body-text a.underline {
     color: white;
 }
 
@@ -35,6 +36,14 @@ body.dark-mode {
 
 .dark-mode .button .button-text {
     color: black;
+}
+
+.dark-mode .blog-card-title {
+    color: black; /* Keep title color black */
+}
+
+.dark-mode .blog-card-description {
+    color: black; /* Change description color if needed */
 }
 
 /* Theme toggle icon styling */
