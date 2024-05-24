@@ -1,0 +1,97 @@
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../assets/images/terminal.svg" />
+    <title>JQuery Library</title>
+    <meta name="description" content="A portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="nav-title-link" href="../index.html">
+            <span class="nav-title">Ethan Morissette</span>
+        </a>
+        <div class="nav-right">
+            <a class="nav-title-link" href="../blog.html">
+                <span class="nav-blog">blog</span>
+            </a>
+            <button id="theme-toggle">
+                <img id="sun-icon" class="theme-icon" alt="Day Mode">
+                <img id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;">
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+        <!-- PROJECT HEADER -->
+        <div id="project-header">
+            <div class="main-title">JQuery</div>
+            <div class="body-text">This project was to help me expand my understanding of javascript and web
+                development.</div>
+            <image class="project-header-image" src="../assets/images/javascript.png">
+                <div class="tags">
+                    <a href="#" class="tag"><span class="button-text">Javascript</span></a>
+                    <a href="#" class="tag"><span class="button-text">Web</span></a>
+                </div>
+        </div>
+
+        <!-- PROJECT DETAILS -->
+        <div id="project-details">
+            <div class="subheader-text">Project Details</div>
+            <div class="project-details-content">
+                <div class="body-text">This library is a lightweight alternative to jQuery that I developed as a personal project to enhance my understanding of JavaScript and DOM manipulation. It offers many of the core functionalities of jQuery in a more compact form, providing an efficient way to manipulate the DOM, attach event handlers, and modify element properties. By creating functions like click, val, css, and html, I was able to implement the essential features needed for dynamic web interactions.</div>
+                <div class="body-text">One of the key learning experiences of this project was implementing the load and get methods for AJAX requests. These methods allow dynamic content loading and data retrieval without refreshing the page, which is critical for creating seamless user experiences. Building these functions from scratch deepened my understanding of asynchronous operations and the XMLHttpRequest API.</div>
+                <div class="body-text">Overall, this project was an invaluable learning opportunity that improved my problem-solving skills and gave me a deeper appreciation for the inner workings of popular libraries like jQuery. It also demonstrated the importance of writing clean, efficient code that can perform well even in a lightweight, minimalistic framework.</div>
+            </div>
+        </div>
+
+        <!-- IMAGE GALLERY -->
+        <div id="project-gallery">
+            <a class="button" href="https://github.com/EthanM97/JQueryLib" target="_blank"
+                rel="noopener noreferrer">
+                <span class="button-text">Visit the Github for this library</span>
+                <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon" />
+            </a>
+        </div>
+    </div>
+
+    <button id="back-to-top"><img src="../assets/icons/arrow-up.svg" class="arrow-up" /></button>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
+            <img src="../assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin" />
+        </a>
+
+        <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
+            <img src="../assets/icons/github.svg" class="footer-icon" data-icon="github" />
+        </a>
+
+        <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
+            <img src="../assets/icons/mail.svg" class="footer-icon" data-icon="mail" />
+        </a>
+    </div>
+</body>
+
+</html>

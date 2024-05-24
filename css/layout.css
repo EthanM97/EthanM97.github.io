@@ -177,7 +177,29 @@ body {
       object-position: center;
     }
 
+/* New Tag Styling */
+.tag {
+  padding: 4px 8px;
+  border: 2px solid black;
+  border-radius: 12px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
 
+
+.tag-blog {
+  padding: 2px 4px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
 
 
 /* Project Pages */
