@@ -94,6 +94,16 @@ a.button:hover {
 }
 
 /* Link Styling */
+a.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: black;
+}
+
+a.underline:hover {
+  cursor: pointer;
+}
+
 a.no-underline {
   text-decoration: none;
   color: black
