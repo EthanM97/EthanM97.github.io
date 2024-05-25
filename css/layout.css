@@ -112,8 +112,8 @@ body {
 .blog-card {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
-  border: 4px solid #f9f9f9;
+  background-color: #ebebeb;
+  border: 4px solid #ebebeb;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -158,14 +158,18 @@ window.addEventListener('DOMContentLoaded', () => {
     addEventListeners();
 });
 
-let lastSparkTime = 0;
-const sparkCooldown = 30000; // 1 minute in milliseconds
+const sparkCooldown = 40000; // 1 minute in milliseconds
+
+// Retrieve the last spark time from localStorage
+let lastSparkTime = parseInt(localStorage.getItem('lastSparkTime')) || 0;
 
 document.addEventListener('scroll', () => {
     const currentTime = new Date().getTime();
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         if (currentTime - lastSparkTime > sparkCooldown) {
             lastSparkTime = currentTime;
+            // Save the last spark time to localStorage
+            localStorage.setItem('lastSparkTime', lastSparkTime);
             requestAnimationFrame(showSparks);
         }
     }
