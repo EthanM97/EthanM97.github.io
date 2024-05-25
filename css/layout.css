@@ -18,7 +18,8 @@ body {
 
 /* Main Page Layout */
 #main-content {
-  margin: 200px 425px;
+  margin: 200px 675px;
+  max-width: 1600px;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -128,6 +129,7 @@ body {
 .blog-card-image {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .blog-card-content {
@@ -309,11 +311,24 @@ body {
       height: auto;
     }
 
+/* Handle the big boy screens */
+@media only screen and (min-width: 7000px) {
+  #main-content {
+    margin: 225px 525px;
+  }
+}
 
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+/* Extra Extra large devices (large laptops and desktops, 1600px and below) */
+@media only screen and (max-width: 2100px) {
+  #main-content {
+    margin: 200px 455px;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1600px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
-    margin: 200px 275px;
+    margin: 200px 255px;
   }
 }
 
@@ -327,14 +342,14 @@ body {
 /* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content {
-    margin: 175px 75px;
+    margin: 175px 120px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
-    margin: 120px 50px;
+    margin: 120px 75px;
   }
 
   #portfolio-header {
@@ -349,7 +364,18 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
   #main-content {
-    margin: 125px 20px;
+    margin: 120px 60px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 350px) {
+  #main-content {
+    margin: 120px 40px;
   }
 
   .project-card {
@@ -358,6 +384,23 @@ body {
 }
 
 /* Responsive Adjustments for Blog Page */
+/* Handle the big boy screens */
+@media only screen and (min-width: 7000px) {
+  #main-content.blog-main-content {
+    margin: 225px 300px;
+  }
+}
+
+
+/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 2000px) {
+  #main-content.blog-main-content {
+    margin: 200px 275px;
+    gap: 0;
+  }
+}
+
+
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content.blog-main-content {
@@ -377,24 +420,21 @@ body {
 /* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content.blog-main-content {
-    margin: 175px 75px;
+    margin: 175px 105px;
     gap: 0;
   }
 }
 
 @media only screen and (max-width: 800px) {
   #main-content.blog-main-content {
-    margin: 120px 50px;
+    margin: 120px 80px;
     gap: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #main-content.blog-main-content {
-    margin: 125px 20px;
+    margin: 125px 30px;
     gap: 0;
   }
 }
-
-
-
