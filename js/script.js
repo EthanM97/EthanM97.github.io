@@ -187,7 +187,7 @@ function addHoverEffect() {
             parentLink.classList.add('reverse-rotate');
             setTimeout(() => {
                 parentLink.classList.remove('reverse-rotate');
-            }, 210); // Adjust the timeout duration to match the animation duration
+            }, 210);
         });
     });
 }

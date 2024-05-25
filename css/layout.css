@@ -267,7 +267,7 @@ body {
   }
 }
 
-/* Extra Extra large devices (large laptops and desktops, 1600px and below) */
+/* Extra Extra large devices (large laptops and desktops, 2100px and below) */
 @media only screen and (max-width: 2100px) {
   #main-content {
     margin: 200px 455px;
@@ -321,7 +321,7 @@ body {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and below) */
+/* Small devices (portrait tablets and large phones, 350px and below) */
 @media only screen and (max-width: 350px) {
   #main-content {
     margin: 120px 40px;
@@ -341,7 +341,7 @@ body {
 }
 
 
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+/* Extra Extra large devices (large laptops and desktops, 2000px and below) */
 @media only screen and (max-width: 2000px) {
   #main-content.blog-main-content {
     margin: 200px 275px;
@@ -350,7 +350,7 @@ body {
 }
 
 
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+/* Extra Extra large devices (large laptops and desktops, 1600px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content.blog-main-content {
     margin: 200px 275px;
