@@ -34,11 +34,6 @@ a.icon-link:hover {
   transform: rotate(25deg);
 }
 
-a.icon-link.reverse-rotate {
-  transform: rotate(-35deg);
-}
-
-
 span.main-title {
   padding-bottom: 6px;
 }

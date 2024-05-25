@@ -153,15 +153,6 @@ function addEventListeners() {
     }
 }
 
-// Function to show footer icons with animation
-function showFooterIcons() {
-    const footerIcons = document.querySelectorAll('.footer-icon');
-    footerIcons.forEach(icon => {
-        icon.classList.remove('show'); // Reset the animation
-        void icon.offsetWidth; // Trigger reflow
-        icon.classList.add('show'); // Add the class again
-    });
-}
 
 // Function to handle navbar shrink
 function handleNavbarShrink() {
