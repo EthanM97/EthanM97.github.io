@@ -24,25 +24,29 @@ body.dark-mode {
 }
 
 .dark-mode .button:hover {
-    background-color: #7F7EFF;
+    background-color: #8132ee;
     text-decoration-thickness: 1.5px;
 }
 
 .dark-mode span.nav-title:hover {
-    color: #7F7EFF;
+    color: #8132ee;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
+.dark-mode .navbar.shrink {
+    background-color: black;
+  }
+  
 .dark-mode span.nav-blog:hover {
-    color: #7F7EFF;
+    color: #8132ee;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
 .dark-mode .blog-card {
-    background-color: #6619d0;
-    border: 4px solid #6619d0;
+    background-color: #8132ee;
+    border: 4px solid #8132ee;
     color: white;
 }
 
@@ -78,6 +82,11 @@ body.dark-mode {
 /* Change the right-arrow icon color to white on button hover in dark mode */
 .dark-mode .button:hover .right-arrow-icon {
     filter: invert(1);
+}
+
+.dark-mode #back-to-top {
+    background-color: #8132ee;
+    color: white;
 }
 
 /* Theme toggle icon styling */
