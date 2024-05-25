@@ -30,7 +30,7 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed position */
   bottom: 20px; /* Place it at the bottom */
-  right: 20px; /* Place it 20px from the right */
+  right: 15px; /* Place it 20px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -252,7 +252,7 @@ body {
     }
 
     .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
+      width: calc((100% - 24px) / 2);
     }
 
     .gallery-image {
@@ -298,7 +298,7 @@ body {
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
-    margin: 120px 75px;
+    margin: 165px 125px;
   }
 
   #portfolio-header {
@@ -306,7 +306,7 @@ body {
   }
 
   .project-card {
-    max-width: calc((100% - 16px) / 2);
+    max-width: calc((100% - 25px) / 2);
   }
 }
 
