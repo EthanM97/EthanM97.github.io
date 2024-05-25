@@ -166,6 +166,7 @@ function handleNavbarShrink() {
     }
 }
 
+<<<<<<< Updated upstream
 // Function to add hover effect on footer icons
 function addHoverEffect() {
     const footerIcons = document.querySelectorAll('.footer-icon');
@@ -183,6 +184,8 @@ function addHoverEffect() {
     });
 }
 
+=======
+>>>>>>> Stashed changes
 // Function to check if user has scrolled to bottom
 function checkScrollBottom() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
