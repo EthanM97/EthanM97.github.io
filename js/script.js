@@ -166,26 +166,6 @@ function handleNavbarShrink() {
     }
 }
 
-<<<<<<< Updated upstream
-// Function to add hover effect on footer icons
-function addHoverEffect() {
-    const footerIcons = document.querySelectorAll('.footer-icon');
-    footerIcons.forEach(icon => {
-        const parentLink = icon.closest('a.icon-link');
-        parentLink.addEventListener('mouseenter', () => {
-            parentLink.classList.remove('reverse-rotate');
-        });
-        parentLink.addEventListener('mouseleave', () => {
-            parentLink.classList.add('reverse-rotate');
-            setTimeout(() => {
-                parentLink.classList.remove('reverse-rotate');
-            }, 210);
-        });
-    });
-}
-
-=======
->>>>>>> Stashed changes
 // Function to check if user has scrolled to bottom
 function checkScrollBottom() {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
