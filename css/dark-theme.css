@@ -24,18 +24,18 @@ body.dark-mode {
 }
 
 .dark-mode .button:hover {
-    background-color: #7F7EFF;
+    background-color: #6619d0;
     text-decoration-thickness: 1.5px;
 }
 
 .dark-mode span.nav-title:hover {
-    color: #7F7EFF;
+    color: #6619d0;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
 .dark-mode span.nav-blog:hover {
-    color: #7F7EFF;
+    color: #6619d0;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
@@ -78,6 +78,11 @@ body.dark-mode {
 /* Change the right-arrow icon color to white on button hover in dark mode */
 .dark-mode .button:hover .right-arrow-icon {
     filter: invert(1);
+}
+
+.dark-mode #back-to-top {
+    background-color: #8132eef4;
+    color: white;
 }
 
 /* Theme toggle icon styling */

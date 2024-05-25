@@ -34,7 +34,7 @@ body {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: transparent; /* Set a background color */
+  background-color: #7F7EFF; /* Set a background color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -46,59 +46,8 @@ body {
 }
 
 #back-to-top:hover {
-  background-color: #7F7EFF; /* Add a slight background on hover */
+  background-color: #7e7effe3; /* Add a slight background on hover */
 }
-
-
-/* Sparks container */
-#sparks-container {
-  position: fixed;
-  bottom: 0;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 100;
-  display: none; /* Hidden by default */
-}
-
-.spark {
-  position: absolute;
-  border-radius: 50%;
-  animation: spark-animation 1s linear forwards;
-}
-
-.spark-small {
-  width: 8px;
-  height: 8px;
-  background-color: #7F7EFF;
-}
-
-.spark-medium {
-  width: 10px;
-  height: 10px;
-  background-color: #7F7EFF;
-}
-
-.spark-large {
-  width: 15px;
-  height: 15px;
-  background-color: #7F7EFF;
-}
-
-@keyframes spark-animation {
-  0% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  40% {
-    opacity: 0;
-    transform: translateY(-50vh) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100vh) scale(1);
-  }
-}
-
 
 
 /* Blog Container */
