@@ -138,7 +138,7 @@ function addEventListeners() {
 
         if (currentScrollTop > lastScrollTop + 30) {
             backToTopButton.style.display = "block";
-        } else if (currentScrollTop < lastScrollTop - 45) {
+        } else if (currentScrollTop < lastScrollTop - 45 || currentScrollTop === 0) {
             backToTopButton.style.display = "none";
         }
         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
@@ -150,6 +150,11 @@ function addEventListeners() {
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        setTimeout(() => {
+            if (window.scrollY === 0) {
+                backToTopButton.style.display = "none";
+            }
+        }, 300); // Adjust the timeout duration to match the smooth scroll duration
     }
 }
 
