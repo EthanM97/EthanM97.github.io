@@ -292,7 +292,7 @@
   /* Extra small devices (portrait tablets and large phones, 600px and below) */
   @media only screen and (max-width: 600px) {
     #main-content {
-      margin: 120px 60px;
+      margin: 120px 35px;
     }
   
     .project-card {
