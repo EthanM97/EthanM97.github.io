@@ -18,7 +18,7 @@
   /* Main Page Layout */
   #main-content {
     margin: 200px auto;
-    padding: 0 20px;
+    padding: 0 65px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -263,7 +263,7 @@
   /* Large devices (laptops/desktops, 1200px and below) */
   @media only screen and (max-width: 1200px) {
     #main-content {
-      margin: 200px 175px;
+      margin: 200px 145px;
     }
   }
   
@@ -277,7 +277,7 @@
   /* Small devices (portrait tablets and large phones, 800px and below) */
   @media only screen and (max-width: 800px) {
     #main-content {
-      margin: 165px 125px;
+      margin: 165px 50px;
     }
   
     #portfolio-header {
