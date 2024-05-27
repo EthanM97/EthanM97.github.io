@@ -9,82 +9,88 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="utf-8">
-     <link rel="icon" href="../assets/images/terminal.svg" />
-     <title>Home</title>
-     <meta name="description" content="A portfolio website">
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link rel="stylesheet" href="../css/layout.css">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/images/terminal.svg" />
+  <title>Home</title>
+  <meta name="description" content="A portfolio website">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/dark-theme.css">
-    <link rel="stylesheet" href="../css/typography.css">
-    <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/utilities.css">
 
-		<script defer src="../js/script.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <span class="nav-title">Ethan Morissette</span>
+  <script defer src="../js/common.js"></script>
+  <script defer src="../js/animate.js"></script>
+  <script defer src="../js/backToTop.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="../index.html">
+      <span class="nav-title">Ethan Morissette</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-title-link" href="../blog.html">
+        <span class="nav-blog">blog</span>
       </a>
-      <div class="nav-right">
-        <a class="nav-title-link" href="../blog.html">
-          <span class="nav-blog">blog</span>
-        </a>
-        <button id="theme-toggle">
-          <img id="sun-icon" class="theme-icon" alt="Day Mode">
-          <img id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;">
-        </button>
-      </div>
+      <button id="theme-toggle">
+        <img id="sun-icon" class="theme-icon" alt="Day Mode">
+        <img id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;">
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
+
+    <!-- PROJECT HEADER -->
+    <div id="project-header">
+      <div class="main-title">Project Name</div>
+      <div class="body-text">A small description about the project goes here, get the reader hooked on the project and
+        tell them why they should continue to read this page. Give it a sweet tagline.</div>
+      <image class="project-header-image" src="../assets/images/desktop.jpeg">
     </div>
 
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
-
-      <!-- PROJECT HEADER -->
-      <div id="project-header">
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
-      </div>
-
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
+    <!-- IMAGE GALLERY -->
+    <div id="project-gallery">
+      <div class="subheader-text">Image Gallery</div>
+      <div class="project-gallery-content">
+        <div class="gallery-image-container half-width">
+          <img src="../assets/images/code.jpeg" class="gallery-image">
+          <span class="image-caption">Give your image a caption. People love context.</span>
+        </div>
+        <div class="gallery-image-container half-width">
+          <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
+          <span class="image-caption">Give your image a caption. People love context.</span>
+        </div>
+        <div class="gallery-image-container">
+          <img src="../assets/images/camera.jpeg" class="gallery-image">
+          <span class="image-caption">Give your image a caption. People love context.</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <button id="back-to-top"><img src="../assets/icons/arrow-up.svg" class="arrow-up"/></button>
+  <button id="back-to-top"><img src="../assets/icons/arrow-up.svg" class="arrow-up" /></button>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
-        <img src="../assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin"/>
-      </a>
-  
-      <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
-        <img src="../assets/icons/github.svg" class="footer-icon" data-icon="github"/>
-      </a>
-  
-      <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
-        <img src="../assets/icons/mail.svg" class="footer-icon" data-icon="mail"/>
-      </a>
-    </div>
-	</body>
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
+      <img src="../assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
+      <img src="../assets/icons/github.svg" class="footer-icon" data-icon="github" />
+    </a>
+
+    <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
+      <img src="../assets/icons/mail.svg" class="footer-icon" data-icon="mail" />
+    </a>
+  </div>
+</body>
+
 </html>
