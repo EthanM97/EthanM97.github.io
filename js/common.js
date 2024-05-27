@@ -108,7 +108,22 @@ function initializeTheme() {
     }
 }
 
-// Add event listeners
+// Function to add smooth scrolling to anchors
+function addSmoothScrolling() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+}
+
+// Function to add event listeners
 function addEventListeners() {
     const themeToggleButton = document.getElementById('theme-toggle');
     if (themeToggleButton) {
@@ -126,93 +141,4 @@ function addEventListeners() {
             document.getElementById('my-work-section').scrollIntoView({ behavior: "smooth" });
         });
     }
-
-    let backToTopButton = document.getElementById("back-to-top");
-    let lastScrollTop = 0;
-    window.onscroll = function () {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        let currentScrollTop = window.scrollY || document.documentElement.scrollTop;
-
-        if (currentScrollTop > lastScrollTop + 30) {
-            backToTopButton.style.display = "block";
-        } else if (currentScrollTop < lastScrollTop - 45 || currentScrollTop === 0) {
-            backToTopButton.style.display = "none";
-        }
-        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-    }
-
-    backToTopButton.onclick = function () {
-        scrollToTop();
-    };
-
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        setTimeout(() => {
-            if (window.scrollY === 0) {
-                backToTopButton.style.display = "none";
-            }
-        }, 300); // Adjust the timeout duration to match the smooth scroll duration
-    }
 }
-
-// Function to show footer icons with animation
-function showFooterIcons() {
-    const footerIcons = document.querySelectorAll('.footer-icon');
-    footerIcons.forEach(icon => {
-        icon.classList.remove('show'); // Reset the animation
-        void icon.offsetWidth; // Trigger reflow
-        icon.classList.add('show'); // Add the class again
-    });
-}
-
-// Function to handle navbar shrink
-function handleNavbarShrink() {
-    const navbar = document.querySelector('.navbar');
-    const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    if (currentScrollTop > 0) {
-        navbar.classList.add('shrink');
-    } else {
-        navbar.classList.remove('shrink');
-    }
-}
-
-// Function to add hover effect on footer icons
-function addHoverEffect() {
-    const footerIcons = document.querySelectorAll('.footer-icon');
-    footerIcons.forEach(icon => {
-        const parentLink = icon.closest('a.icon-link');
-        parentLink.addEventListener('mouseenter', () => {
-            parentLink.classList.remove('reverse-rotate');
-        });
-        parentLink.addEventListener('mouseleave', () => {
-            parentLink.classList.add('reverse-rotate');
-            // Add timeout to remove reverse-rotate class after the animation completes
-            setTimeout(() => {
-                parentLink.classList.remove('reverse-rotate');
-            }, 200); // Adjust the timeout duration to match the animation duration
-        });
-    });
-}
-
-// Function to check if user has scrolled to bottom
-function checkScrollBottom() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        showFooterIcons();
-    }
-}
-
-// Initialize everything on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    initializeThemeToggleIcons();
-    initializeTheme();
-    addEventListeners();
-    addHoverEffect();
-    window.addEventListener('scroll', () => {
-        checkScrollBottom();
-        handleNavbarShrink();
-    });
-});
