@@ -317,10 +317,11 @@ body {
 /* Tiny devices (portrait tablets and large phones, 350px and below) */
 @media only screen and (max-width: 350px) {
   #main-content {
-    margin: 120px 40px;
+    margin: 120px 20px;
   }
 
   .project-card {
     max-width: 100%;
   }
+
 }
