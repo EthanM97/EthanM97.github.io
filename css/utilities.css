@@ -34,10 +34,6 @@ a.icon-link:hover {
   transform: rotate(15deg);
 }
 
-span.main-title {
-  padding-bottom: 6px;
-}
-
 
 /* Navbar Styling */
 
@@ -84,7 +80,6 @@ span.main-title {
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   .navbar {
-    
     padding: 35px 25px;
     background-color: #FFFF;
   }
@@ -92,6 +87,38 @@ span.main-title {
   .navbar.shrink {
     padding: 10px 14px;
     background-color: #FFFF;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 390px) {
+  .navbar {
+    padding: 24px 20px;
+    background-color: #FFFF;
+  }
+
+  span.nav-title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  span.nav-blog {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  div.nav-right {
+    gap: 16px;
+  }
+
+  .navbar.shrink {
+    padding: 8px 12px;
+    background-color: #FFFF;
+  }
+
+  span.main-title {
+    font-size: 26px;
   }
 
 }

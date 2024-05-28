@@ -35,6 +35,12 @@ body {
   span.main-title {
       font-size: 32px;
   }
+
+  div#typewriter {
+      font-size: 1em;
+      margin-top: 0;
+  }
+
 }
 
 .subheader-text {
@@ -76,8 +82,6 @@ body {
 #typewriter {
   display: inline-block;
   font-family: monospace;
-  margin-top: 4px;
-  font-size: 1.25em;
 }
 
 .project-card-text {
