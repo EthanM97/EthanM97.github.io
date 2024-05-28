@@ -1,164 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
 
-    <link rel="icon" href="./assets/images/terminal.svg" />
-		<title>Ethan Morissette</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8">
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/dark-theme.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="icon" href="./assets/images/terminal.svg" />
+  <title>Ethan Morissette</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preload" href="./assets/images/headshot_dark.png" as="image">
-    <link rel="preload" href="./assets/images/headshot_light.png" as="image">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/dark-theme.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
 
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/animate.js"></script>
-    <script defer src="./js/backToTop.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <span class="nav-title">Ethan Morissette</span>
+  <link rel="preload" href="./assets/images/headshot_dark.png" as="image">
+  <link rel="preload" href="./assets/images/headshot_light.png" as="image">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/animate.js"></script>
+  <script defer src="./js/backToTop.js"></script>
+  <script defer src="./js/typing.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <span class="nav-title">Ethan Morissette</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-title-link" href="./blog.html">
+        <span class="nav-blog">blog</span>
       </a>
-      <div class="nav-right">
-        <a class="nav-title-link" href="./blog.html">
-          <span class="nav-blog">blog</span>
+      <button id="theme-toggle">
+        <svg id="sun-icon" class="theme-icon" alt="Day Mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="WHITE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-sun">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;"
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="BLACK"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
+
+    <!-- PORTFOLIO HEADER -->
+    <div id="portfolio-header">
+      <div id="portfolio-header-image-container">
+        <img src="./assets/images/headshot_dark.png" class="portfolio-header-image" loading="eager">
         </a>
-        <button id="theme-toggle">
-          <svg id="sun-icon" class="theme-icon" alt="Day Mode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="WHITE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg id="moon-icon" class="theme-icon" alt="Night Mode" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="BLACK" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
+      </div>
+
+      <div id="portfolio-header-text-container">
+        <div class="header-text">
+          <span class="main-title">Howdy! I'm Ethan</span></br>
+          <div id="typewriter" class="body-text">Problem solver</div>
+        </div>
+        <a class="button" id="my-work-link">
+          <span class="button-text">Check out my projects</span>
+          <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+        </a>
       </div>
     </div>
 
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
+    <div id="about-section">
+      <span class="subheader-text">About Me</span>
+      <div class="about-section-content">
+        <div class="body-text">In my free time, I am constantly exploring new and exciting projects. Whether it's
+          experimenting with the latest technology, developing a new skill, or refining existing ones, I am always on
+          the lookout for ways to challenge myself and grow. My curiosity drives me to learn continuously, and I find
+          joy in the process of discovery and improvement. When I'm away from my computer, you’ll often find me
+          exploring the great outdoors. I have a deep love for nature and adventure, which I indulge through mountain
+          biking and skiing. These activities not only provide a thrilling escape but also help me stay physically fit
+          and mentally refreshed. Whether I’m navigating rugged mountain trails or gliding down snowy slopes, I embrace
+          the challenges and exhilaration that come with these outdoor pursuits.</div>
+        <div class="body-text">I bring approximately three years of work experience gained through co-op terms with Teck
+          and FortisBC. These positions have provided me with a rich tapestry of experiences and the opportunity to work
+          on a variety of fascinating projects. Some of the key highlights include contributing to the design and
+          implementation of robust network infrastructures and server solutions, ensuring optimal performance and
+          reliability for business operations. I also played a crucial role in developing and deploying production
+          machine learning models that enhance data-driven decision-making processes. This experience allowed me to
+          delve into the complexities of machine learning, from data preprocessing to model validation and deployment.
+        </div>
+        <div class="body-text">These hands-on experiences have been instrumental in honing my technical skills and
+          understanding the practical applications of technology in the industry. Working on such diverse projects has
+          not only enhanced my problem-solving abilities but also provided me with valuable insights into how technology
+          can be leveraged to drive innovation and efficiency in various contexts. I am passionate about technology and
+          continuously seek to push the boundaries of my knowledge and capabilities. My professional journey, coupled
+          with my love for outdoor adventures, defines who I am—a curious, driven, and enthusiastic individual eager to
+          embrace new challenges and make a meaningful impact.</div>
+      </div>
+    </div>
 
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <img src="./assets/images/headshot_dark.png" class="portfolio-header-image" loading="eager">
+    <!-- PROJECTS / MY WORK SECTION -->
+    <div id="my-work-section">
+      <span class="subheader-text">My Work</span>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./assets/images/asset_care.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Asset Care</div>
+            <div class="body-text project-card-text">I developed an advanced data analytics report at Teck Coal that
+              saved FRO $1.2 million in preventative maintenance costs.</div>
+          </div>
+          <a class="button" href="./project-pages/asset_care.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
           </a>
         </div>
-
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Howdy! I'm Ethan</span>
-              <div class="body-text">A focused developer driven by data-based solutions, with a good eye for creating impactful, real-world software solutions.</div>
-            </br><div class="body-text">I have experience in Data Science, Networking and Web Development.</div>
-            </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+        <div class="project-card">
+          <img src="./assets/images/rust.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Sifter</div>
+            <div class="body-text project-card-text">Sifter is a command-line tool I developed in Rust to expand my
+              skills and deepen my understanding of the language."</div>
+          </div>
+          <a class="button" href="./project-pages/sifter.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
         </div>
-      </div>
-
-      <div id="about-section">
-        <span class="subheader-text">About Me</span>
-        <div class="about-section-content">
-          <div class="body-text">In my free time, I am constantly exploring new and exciting projects. Whether it's experimenting with the latest technology, developing a new skill, or refining existing ones, I am always on the lookout for ways to challenge myself and grow. My curiosity drives me to learn continuously, and I find joy in the process of discovery and improvement. When I'm away from my computer, you’ll often find me exploring the great outdoors. I have a deep love for nature and adventure, which I indulge through mountain biking and skiing. These activities not only provide a thrilling escape but also help me stay physically fit and mentally refreshed. Whether I’m navigating rugged mountain trails or gliding down snowy slopes, I embrace the challenges and exhilaration that come with these outdoor pursuits.</div>
-          <div class="body-text">I bring approximately three years of work experience gained through co-op terms with Teck and FortisBC. These positions have provided me with a rich tapestry of experiences and the opportunity to work on a variety of fascinating projects. Some of the key highlights include contributing to the design and implementation of robust network infrastructures and server solutions, ensuring optimal performance and reliability for business operations. I also played a crucial role in developing and deploying production machine learning models that enhance data-driven decision-making processes. This experience allowed me to delve into the complexities of machine learning, from data preprocessing to model validation and deployment.</div>
-          <div class="body-text">These hands-on experiences have been instrumental in honing my technical skills and understanding the practical applications of technology in the industry. Working on such diverse projects has not only enhanced my problem-solving abilities but also provided me with valuable insights into how technology can be leveraged to drive innovation and efficiency in various contexts. I am passionate about technology and continuously seek to push the boundaries of my knowledge and capabilities. My professional journey, coupled with my love for outdoor adventures, defines who I am—a curious, driven, and enthusiastic individual eager to embrace new challenges and make a meaningful impact.</div>
+        <div class="project-card">
+          <img src="./assets/images/streamlit_logo_dark.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">TADA</div>
+            <div class="body-text project-card-text">Tada is a webapp built using Streamlit. It is created to allow
+              users to clean and analyze a dataset quickly.</div>
+          </div>
+          <a class="button" href="./project-pages/tada.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
         </div>
-      </div>
-
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <span class="subheader-text">My Work</span>
-
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="./assets/images/asset_care.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Asset Care</div>
-              <div class="body-text project-card-text">I developed an advanced data analytics report at Teck Coal that saved FRO $1.2 million in preventative maintenance costs.</div>
-            </div>
-            <a class="button" href="./project-pages/asset_care.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+        <div class="project-card">
+          <img src="./assets/images/TF.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Failure Mode Prediction</div>
+            <div class="body-text project-card-text">This was a project where I employeed the use of a tabular GAN to
+              create more failure mode data for my models to train on.</div>
           </div>
-          <div class="project-card">
-            <img src="./assets/images/rust.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Sifter</div>
-              <div class="body-text project-card-text">Sifter is a command-line tool I developed in Rust to expand my skills and deepen my understanding of the language."</div>
-            </div>
-            <a class="button" href="./project-pages/sifter.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+          <a class="button" href="./project-pages/failure_modes.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/images/javascript.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">JQuery Library</div>
+            <div class="body-text project-card-text">This library is designed to offer an alternative to JQuery that is
+              lightweight and simple. It offers some foundational features that are attributed with JQuery.</div>
           </div>
-          <div class="project-card">
-            <img src="./assets/images/streamlit_logo_dark.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">TADA</div>
-              <div class="body-text project-card-text">Tada is a webapp built using Streamlit. It is created to allow users to clean and analyze a dataset quickly.</div>
-            </div>
-            <a class="button" href="./project-pages/tada.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+          <a class="button" href="./project-pages/jquery_lib.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/images/discord_bot.png" class="project-image" loading="eager">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">News Discord Bot</div>
+            <div class="body-text project-card-text">I wanted to automate gathering news so I created a basic discord
+              bot and webscrapper to do the work for me.</div>
           </div>
-          <div class="project-card">
-            <img src="./assets/images/TF.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Failure Mode Prediction</div>
-              <div class="body-text project-card-text">This was a project where I employeed the use of a tabular GAN to create more failure mode data for my models to train on.</div>
-            </div>
-            <a class="button" href="./project-pages/failure_modes.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/javascript.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">JQuery Library</div>
-              <div class="body-text project-card-text">This library is designed to offer an alternative to JQuery that is lightweight and simple. It offers some foundational features that are attributed with JQuery.</div>
-            </div>
-            <a class="button" href="./project-pages/jquery_lib.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/discord_bot.png" class="project-image" loading="eager">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">News Discord Bot</div>
-              <div class="body-text project-card-text">I wanted to automate gathering news so I created a basic discord bot and webscrapper to do the work for me.</div>
-            </div>
-            <a class="button" href="./project-pages/discord_bot.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
+          <a class="button" href="./project-pages/discord_bot.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <button id="back-to-top"><img src="./assets/icons/arrow-up.svg" class="arrow-up"/></button>
+  <button id="back-to-top"><img src="./assets/icons/arrow-up.svg" class="arrow-up" /></button>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
-        <img src="./assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin"/>
-      </a>
-  
-      <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
-        <img src="./assets/icons/github.svg" class="footer-icon" data-icon="github"/>
-      </a>
-  
-      <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
-        <img src="./assets/icons/mail.svg" class="footer-icon" data-icon="mail"/>
-      </a>
-    </div>
-	</body>
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ethan-morissette-a478a1192">
+      <img src="./assets/icons/linkedin.svg" class="footer-icon" data-icon="linkedin" />
+    </a>
+
+    <a class="icon-link" target="_blank" href="https://github.com/EthanM97">
+      <img src="./assets/icons/github.svg" class="footer-icon" data-icon="github" />
+    </a>
+
+    <a class="icon-link" href="mailto:ethan.morissette@gmail.com">
+      <img src="./assets/icons/mail.svg" class="footer-icon" data-icon="mail" />
+    </a>
+  </div>
+</body>
+
 </html>

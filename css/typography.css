@@ -63,6 +63,13 @@ body {
   font-weight: 500;
 }
 
+#typewriter {
+  display: inline-block;
+  font-family: monospace;
+  margin-top: 4px;
+  font-size: 1.25em;
+}
+
 .project-card-text {
   overflow: hidden;
   text-overflow: ellipsis;
