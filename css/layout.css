@@ -255,6 +255,10 @@ div#my-about.container {
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 
 /* Project Pages */
 #project-header {
