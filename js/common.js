@@ -27,8 +27,8 @@ const paths = {
         mailLight: `${basePath}assets/icons/mail_light.svg`
     },
     images: {
-        headshotDark: `${basePath}assets/images/headshot_dark.png`,
-        headshotLight: `${basePath}assets/images/headshot_light.png`
+        headshotDark: `${basePath}assets/images/headshot_dark.webp`,
+        headshotLight: `${basePath}assets/images/headshot_light.webp`
     }
 };
 
