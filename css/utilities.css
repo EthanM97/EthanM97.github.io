@@ -142,6 +142,10 @@ a.button:hover {
   cursor: pointer;
 }
 
+a#contact-btn.button.mt-3 {
+  margin-top: 24px !important;
+}
+
 
 /* Footer Styling */
 
