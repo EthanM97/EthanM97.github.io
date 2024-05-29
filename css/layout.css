@@ -214,6 +214,48 @@ body {
   margin-bottom: 2px;
 }
 
+div.card.mb-4 {
+  border-radius: 8px;
+  border: 2px solid #ebebeb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div#my-about.container {
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+}
+
+#my-about .card-header {
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my-about .card-body {
+  padding: 2rem;
+}
+
+.preview {
+  display: block;
+}
+
+.full-content {
+  display: none;
+}
+
+.full-content.show {
+  display: block;
+}
+
+.toggle-button {
+  display: block;
+  cursor: pointer;
+}
+
+
 /* Project Pages */
 #project-header {
   display: flex;
@@ -322,6 +364,38 @@ body {
 
   .project-card {
     max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  #my-about .card-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #my-about .card-header h2.mb-0   {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+}
+
+/* Responsive styles for about me */
+@media only screen and (max-width: 370px) {
+  #my-about .card-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #my-about .card-header h2.mb-0   {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #my-about button.toggle-button.btn {
+    padding: 0;
   }
 
 }

@@ -36,8 +36,8 @@ body.dark-mode {
 
 .dark-mode .navbar.shrink {
     background-color: black;
-  }
-  
+}
+
 .dark-mode span.nav-blog:hover {
     color: #8132ee;
     text-decoration: underline;
@@ -108,7 +108,52 @@ button#theme-toggle {
     background-color: white;
 }
 
-
 .dark-mode .tag .button-text {
     color: black;
+}
+
+/* Dark mode for About Me card */
+.dark-mode #my-about .card {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode #my-about .card-header {
+    background-color: #8132ee;
+    border-bottom: 1px solid #8132ee;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-mode div.card.mb-4 {
+    border: none;
+}
+
+.dark-mode div.card-body {
+    border: 2px solid #8132ee;
+}
+
+.dark-mode #my-about .card-body {
+    background-color: black;
+    border-radius: 0 0 8px 8px;
+}
+
+.dark-mode #my-about .card-text .preview,
+.dark-mode #my-about .card-text .full-content {
+    color: white;
+}
+
+.dark-mode #my-about .button {
+    color: black;
+}
+
+.dark-mode #my-about .button:hover {
+    background-color: #8132ee;
+    color: white;
+}
+
+.dark-mode button.toggle-button.btn {
+    color: white;
 }
